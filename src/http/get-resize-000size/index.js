@@ -2,7 +2,7 @@ const { execSync } = require('child_process')
 const fs = require('fs')
 
 exports.handler = async function http(req) {
-
+  console.log('handler')
   //make sure it's a number
   let resize = parseInt(req.pathParameters.size)
 
